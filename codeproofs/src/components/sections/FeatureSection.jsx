@@ -47,7 +47,6 @@ const cardVariants = {
 const FeaturesSection = () => {
   return (
     <section className="bg-background text-text py-24 px-8 md:px-16 lg:px-24">
-      {/* Header */}
       <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -69,7 +68,6 @@ const FeaturesSection = () => {
         </motion.h2>
       </div>
 
-      {/* Feature Cards Grid */}
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         initial="hidden"
@@ -81,9 +79,8 @@ const FeaturesSection = () => {
             key={index}
             custom={index}
             variants={cardVariants}
-            className="bg-[#0D0D0D] border border-[#1A1A1A] p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
+            className="bg-[#0D0D0D] border border-[#1A1A1A] p-6 rounded-lg shadow-lg backdrop-blur-md bg-opacity-30 hover:bg-opacity-50 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:border-accent"
           >
-            {/* Icon with Individual Animation */}
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -94,10 +91,8 @@ const FeaturesSection = () => {
               {feature.icon}
             </motion.div>
 
-            {/* Title */}
             <h3 className="text-xl font-semibold">{feature.title}</h3>
 
-            {/* Description */}
             <p className="text-secondary mt-2">{feature.description}</p>
           </motion.div>
         ))}

@@ -3,9 +3,12 @@ import codingImage from "../../assets/images/hero.png"; // Ensure correct import
 
 const Hero = () => {
   return (
-    <section className="bg-background text-text flex flex-col items-center justify-center min-h-screen px-6 text-center">
+    <section className="relative bg-background text-text flex flex-col items-center justify-center min-h-screen px-6 text-center overflow-hidden">
+      {/* God Rays Effect */}
+      <div className="absolute inset-0 bg-gradient-radial from-black via-transparent to-transparent opacity-60 pointer-events-none"></div>
+
       {/* Hero Content */}
-      <div className="max-w-3xl mx-auto">
+      <div className="relative max-w-3xl mx-auto mt-16">
         <h1 className="text-6xl md:text-7xl font-bold leading-[1.2] tracking-tight">
           <span className="bg-gradient-to-r from-white via-gray-400 to-gray-600 bg-clip-text text-transparent">
             Transforming Ideas
@@ -26,7 +29,7 @@ const Hero = () => {
       </div>
 
       {/* Image Below */}
-      <div className="mt-12 w-full flex justify-center">
+      <div className="relative mt-12 w-full flex justify-center">
         <img src={codingImage} alt="Coding Setup" className="w-full max-w-4xl object-cover rounded-lg shadow-lg" />
       </div>
     </section>

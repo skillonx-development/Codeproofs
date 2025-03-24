@@ -18,8 +18,12 @@ function Landing() {
       {/* Navbar */}
       <Navbar />
 
+      {/* Add margin below Navbar */}
+      <div className="mt-16">
+        <Hero />
+      </div>
+
       {/* Sections */}
-      <Hero />
       <About />
 
       {/* Sticky Sections Wrapper */}
@@ -48,7 +52,6 @@ function Landing() {
       <BusinessBanner />
       <CodeproofsBanner />
     </div>
-  
   );
 }
 
