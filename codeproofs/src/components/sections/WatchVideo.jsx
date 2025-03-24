@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../../assets/images/about.png"; // Ensure the correct path
+import bgImage from "../../assets/images/WatchVideo.jpg"; // Ensure the correct path
 
 const WatchVideo = () => {
   return (

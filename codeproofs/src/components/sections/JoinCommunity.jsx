@@ -1,6 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import image1 from "../../assets/images/community/image1.png";
+import image2 from "../../assets/images/community/image2.png";
+import image3 from "../../assets/images/community/image3.png";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -39,7 +42,7 @@ const JoinCommunity = () => {
             {/* Slide 1 */}
             <SwiperSlide className="flex items-center justify-center">
               <img
-                src="/images/slide1.png"
+                src={image1}
                 alt="Invite Your Team"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -48,7 +51,14 @@ const JoinCommunity = () => {
             {/* Slide 2 */}
             <SwiperSlide className="flex items-center justify-center">
               <img
-                src="/images/slide2.png"
+                src={image2}
+                alt="Payment Success"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="flex items-center justify-center">
+              <img
+                src={image3}
                 alt="Payment Success"
                 className="w-full h-full object-cover rounded-lg"
               />

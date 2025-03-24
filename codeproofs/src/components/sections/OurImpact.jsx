@@ -1,21 +1,21 @@
 import React from "react";
-import bgImage from "../../assets/images/hero.png"; // Ensure the path is correct
+import bgImage from "../../assets/images/OurImpact.jpg"; // Ensure the path is correct
 import { FaCheckSquare } from "react-icons/fa"; // Check icon
 
 const OurImpact = () => {
   return (
-    <section className="relative w-full min-h-screen bg-background text-white pt-24">
+    <section className="relative w-full min-h-screen flex items-center justify-start bg-background text-white">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
 
-      {/* Dark Overlay for Readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      {/* Gradient Overlay for Better Readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
 
-      {/* Content Container (Top-Left Corner) */}
-      <div className="relative max-w-3xl px-6 md:px-12 lg:px-24 py-16 z-10 text-left">
+      {/* Content (Left-Aligned) */}
+      <div className="relative max-w-[600px] px-8 md:px-16 lg:px-24 py-16 z-10 text-left">
         {/* Description */}
         <p className="text-sm md:text-base lg:text-lg leading-relaxed font-satoshi">
           Our expertise spans across enterprise software, cloud platforms, CRM systems, ERP solutions, billing software, AI applications, web development, mobile apps, and cybersecurity solutions. With our talented team, we deliver cutting-edge technology that drives business growth.
