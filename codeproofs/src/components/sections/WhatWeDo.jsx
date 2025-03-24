@@ -1,5 +1,5 @@
-import React from "react";
-import bgImage from "../../assets/images/WhatWeDo.png"; // Ensure correct path
+import React from "react"; 
+import bgImage from "../../assets/images/WhatWeDo.jpg"; // Ensure correct path
 
 const WhatWeDo = () => {
   return (
@@ -10,11 +10,11 @@ const WhatWeDo = () => {
         style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
 
-      {/* Dark Overlay to Improve Readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      {/* Gradient Overlay for a Soft Effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
 
       {/* Content (Aligned to the Left) */}
-      <div className="relative max-w-3xl px-6 md:px-12 lg:px-24 py-16 z-10 text-left">
+      <div className="relative max-w-[600px] px-8 md:px-16 lg:px-24 py-16 z-10 text-left">
         {/* Header */}
         <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-accent">
           Years of innovation at Codeproofs!
