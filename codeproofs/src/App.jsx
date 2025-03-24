@@ -1,13 +1,12 @@
-import { useState } from 'react'
-
+import React from "react";
+import Landing from "./pages/Landing"; // Import the Landing page
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="bg-blue-500 text-white p-4">Hello, Tailwind!</div>
-
-  )
+    <div className="bg-background text-text font-satoshi min-h-screen">
+      <Landing />
+    </div>
+  );
 }
 
-export default App
+export default App;

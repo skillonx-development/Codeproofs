@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/src/assets/fonts/satoshi-variable.ttf') format('truetype');
+  font-weight: 100 900; /* Variable font supports multiple weights */
+  font-style: normal;
+}
