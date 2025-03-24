@@ -1,9 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-import image1 from "../../assets/images/community/image1.png";
-import image2 from "../../assets/images/community/image2.png";
+
+// Update image imports to use full path or ensure correct webpack/vite configuration
+import image1 from "../../assets/images/community/image1.png"; 
+import image2 from "../../assets/images/community/image2.png"; 
 import image3 from "../../assets/images/community/image3.png";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -23,11 +26,16 @@ const JoinCommunity = () => {
           feedback, and establish yourself as an expert in your technical
           domain.
         </p>
-        <button className="px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300">
-          Join Our Community
+        <button className="relative px-6 py-3 bg-green-700 text-white rounded-lg font-semibold overflow-hidden transition-all duration-300 hover:bg-green-800 group">
+          <span className="absolute inset-0 bg-white opacity-20 rounded-lg blur-md transition duration-300 group-hover:opacity-30"></span>
+          <span className="relative z-10">Join Our Community</span>
+          <span className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <span className="absolute w-20 h-20 bg-white opacity-10 rounded-full animate-ping"></span>
+            <span className="w-4 h-4 bg-white rounded-full opacity-60 animate-pulse"></span>
+          </span>
         </button>
       </div>
-
+      
       {/* Right Content - Image Carousel */}
       <div className="md:w-1/2 flex justify-center mt-12 md:mt-0">
         <div className="w-[450px] h-[350px] rounded-xl shadow-xl bg-gradient-to-br from-primary to-black p-6 flex items-center justify-center">
@@ -47,7 +55,7 @@ const JoinCommunity = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
             </SwiperSlide>
-
+            
             {/* Slide 2 */}
             <SwiperSlide className="flex items-center justify-center">
               <img
@@ -56,6 +64,8 @@ const JoinCommunity = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
             </SwiperSlide>
+            
+            {/* Slide 3 */}
             <SwiperSlide className="flex items-center justify-center">
               <img
                 src={image3}
