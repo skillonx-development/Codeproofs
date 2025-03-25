@@ -37,45 +37,45 @@ const JoinCommunity = () => {
       </div>
       
       {/* Right Content - Image Carousel */}
-      <div className="md:w-1/2 flex justify-center mt-12 md:mt-0">
-        <div className="w-[450px] h-[350px] rounded-xl shadow-xl bg-gradient-to-br from-primary to-black p-6 flex items-center justify-center">
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            spaceBetween={10}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
-            className="w-full h-full"
-          >
-            {/* Slide 1 */}
-            <SwiperSlide className="flex items-center justify-center">
-              <img
-                src={image1}
-                alt="Invite Your Team"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </SwiperSlide>
-            
-            {/* Slide 2 */}
-            <SwiperSlide className="flex items-center justify-center">
-              <img
-                src={image2}
-                alt="Payment Success"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </SwiperSlide>
-            
-            {/* Slide 3 */}
-            <SwiperSlide className="flex items-center justify-center">
-              <img
-                src={image3}
-                alt="Payment Success"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div>
+<div className="md:w-1/2 flex justify-center mt-12 md:mt-0">
+  <div className="w-[600px] h-600 rounded-2xl shadow-2xl bg-gradient-to-br from-primary to-black p-8 flex items-center justify-center">
+    <Swiper
+      modules={[Pagination, Autoplay]}
+      spaceBetween={10}
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 3000 }}
+      className="w-120 h-320"
+    >
+      {/* Slide 1 */}
+      <SwiperSlide className="flex items-center justify-center">
+        <img
+          src={image1}
+          alt="Invite Your Team"
+          className="w-full h-full object-cover rounded-xl"
+        />
+      </SwiperSlide>
+
+      {/* Slide 2 */}
+      <SwiperSlide className="flex items-center justify-center">
+        <img
+          src={image2}
+          alt="Payment Success"
+          className="w-full h-full object-cover rounded-xl"
+        />
+      </SwiperSlide>
+
+      {/* Slide 3 */}
+      <SwiperSlide className="flex items-center justify-center">
+        <img
+          src={image3}
+          alt="Payment Success"
+          className="w-full h-full object-cover rounded-xl"
+        />
+      </SwiperSlide>
+    </Swiper>
+  </div>
+</div>
     </section>
   );
 };
