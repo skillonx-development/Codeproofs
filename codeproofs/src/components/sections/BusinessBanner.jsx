@@ -4,7 +4,6 @@ const BusinessBanner = () => {
   return (
     <div>
       <div className="overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-500 via-green-500 to-emerald-400 opacity-70 blur-2xl"></div>
         <div className="relative z-10 text-white text-center p-8">
           <h2 className="text-3xl font-bold mb-4">
             Track leads, automate tasks, and grow your business with ease
