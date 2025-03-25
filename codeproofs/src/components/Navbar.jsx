@@ -1,6 +1,16 @@
 import React from "react";
 
 const Navbar = () => {
+  // Define navigation items with specific links or routes
+  const navItems = [
+    { title: "Home", link: "/" },
+    { title: "Features", link: "/features" },
+    { title: "About us", link: "/about" },
+    { title: "Help", link: "/help" },
+    { title: "Contact", link: "/contact" },
+    { title: "Updates", link: "/updates" }
+  ];
+
   return (
     <nav className="fixed top-0 w-full bg-black text-white py-4 shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center px-6">
@@ -9,13 +19,13 @@ const Navbar = () => {
         
         {/* Navigation Links */}
         <ul className="flex space-x-10 text-lg">
-          {["Home", "Features", "About us", "Help", "Contact", "Updates"].map((title, index) => (
+          {navItems.map((item, index) => (
             <li key={index}>
               <a
-                href={`#${title.toLowerCase().replace(" ", "-")}`}
+                href={item.link}
                 className="hover:text-accent transition duration-300"
               >
-                {title}
+                {item.title}
               </a>
             </li>
           ))}
